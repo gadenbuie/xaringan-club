@@ -32,33 +32,18 @@
                 background-color: #212529;
                 color: var(--pink);
               }
-              </style>
-              <script type="text/javascript">
-              document.addEventListener('DOMContentLoaded', function() {
-                const logo = document.querySelector('.container .col-12 > img:first-child')
-                logo.classList.remove('rounded-circle')
-                logo.setAttribute(
-                  'alt', 
-                  'Xaringan Club hex logo: a pink and black logo featuring a stylized eye ' +
-                  'and the words "Xaringan Club" emblazoned on a soap bar. Inspired by the ' + 
-                  'Xaringan package hex and the Fight Club soap logo. Logo originally ' + 
-                  'created by Tan Ho and is released under CC0.'
-                )
-                
-                document
-                  .querySelectorAll('.col-8 > .list-inline > .list-inline-item > a > button')
-                  .forEach(el => {
-                    el.classList.remove('btn-outline-dark')
-                    el.classList.add('btn-outline-warning')
-                  })
-              })
-              </script>
-            </div>
-            <div class="col-11 mt-3 text-center d-block d-sm-none">
-              <style type="text/css">
-              body {
-                background-color: #212529;
-                color: var(--pink);
+              .list-group-item-action.btn-outline-warning {
+                background: unset;
+                border-color: var(--yellow);
+                color: var(--yellow);
+              }
+              .list-group-item-action.btn-outline-warning:hover {
+                background: var(--yellow);
+                border-color: var(--yellow);
+                color: var(--dark);
+              }
+              .col-8.d-sm-none > .list-group > a:hover {
+                text-decoration: none;
               }
               </style>
               <script type="text/javascript">
@@ -74,7 +59,54 @@
                 )
                 
                 document
-                  .querySelectorAll('.col-8 > .list-inline > .list-inline-item > a > button')
+                  .querySelectorAll(
+                    '.col-8 > .list-inline > .list-inline-item > a > button, ' +
+                    '.col-8 > .list-group button.list-group-item-action'
+                  )
+                  .forEach(el => {
+                    el.classList.remove('btn-outline-dark')
+                    el.classList.add('btn-outline-warning')
+                  })
+              })
+              </script>
+            </div>
+            <div class="col-11 mt-3 text-center d-block d-sm-none">
+              <style type="text/css">
+              body {
+                background-color: #212529;
+                color: var(--pink);
+              }
+              .list-group-item-action.btn-outline-warning {
+                background: unset;
+                border-color: var(--yellow);
+                color: var(--yellow);
+              }
+              .list-group-item-action.btn-outline-warning:hover {
+                background: var(--yellow);
+                border-color: var(--yellow);
+                color: var(--dark);
+              }
+              .col-8.d-sm-none > .list-group > a:hover {
+                text-decoration: none;
+              }
+              </style>
+              <script type="text/javascript">
+              document.addEventListener('DOMContentLoaded', function() {
+                const logo = document.querySelector('.container .col-12 > img:first-child')
+                logo.classList.remove('rounded-circle')
+                logo.setAttribute(
+                  'alt', 
+                  'Xaringan Club hex logo: a pink and black logo featuring a stylized eye ' +
+                  'and the words "Xaringan Club" emblazoned on a soap bar. Inspired by the ' + 
+                  'Xaringan package hex and the Fight Club soap logo. Logo originally ' + 
+                  'created by Tan Ho and is released under CC0.'
+                )
+                
+                document
+                  .querySelectorAll(
+                    '.col-8 > .list-inline > .list-inline-item > a > button, ' +
+                    '.col-8 > .list-group button.list-group-item-action'
+                  )
                   .forEach(el => {
                     el.classList.remove('btn-outline-dark')
                     el.classList.add('btn-outline-warning')

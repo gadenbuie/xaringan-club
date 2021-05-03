@@ -23,6 +23,19 @@ body {
   background-color: #212529;
   color: var(--pink);
 }
+.list-group-item-action.btn-outline-warning {
+  background: unset;
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+.list-group-item-action.btn-outline-warning:hover {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--dark);
+}
+.col-8.d-sm-none > .list-group > a:hover {
+  text-decoration: none;
+}
 ```
 
 ```{js echo=FALSE}
@@ -38,7 +51,10 @@ document.addEventListener('DOMContentLoaded', function() {
   )
   
   document
-    .querySelectorAll('.col-8 > .list-inline > .list-inline-item > a > button')
+    .querySelectorAll(
+      '.col-8 > .list-inline > .list-inline-item > a > button, ' +
+      '.col-8 > .list-group button.list-group-item-action'
+    )
     .forEach(el => {
       el.classList.remove('btn-outline-dark')
       el.classList.add('btn-outline-warning')
