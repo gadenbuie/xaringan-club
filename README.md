@@ -12,7 +12,7 @@ package.
 -   [Demo Slides](https://slides.yihui.org/xaringan)
 -   [GitHub](https://github.com/yihui/xaringan)
 -   [Wiki](https://github.com/yihui/xaringan/wiki)
--   [xaringanThemer](https://pkg.garrickadenbuie.com/xaringanthemer)
+-   [xaringanthemer](https://pkg.garrickadenbuie.com/xaringanthemer)
 -   [xaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra)
 -   [xaringanBuilder](https://jhelvy.github.io/xaringanBuilder/)
 
