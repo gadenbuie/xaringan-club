@@ -1,0 +1,47 @@
+---
+title: "xaringan.club"
+image: "xaringanclub.png"
+links:
+  - label: Demo Slides
+    url: "https://slides.yihui.org/xaringan"
+  - label: GitHub
+    url: "https://github.com/yihui/xaringan"
+  - label: Wiki
+    url: "https://github.com/yihui/xaringan/wiki"
+  - label: xaringanThemer
+    url: "https://pkg.garrickadenbuie.com/xaringanthemer"
+  - label: xaringanExtra
+    url: "https://pkg.garrickadenbuie.com/xaringanExtra"
+  - label: xaringanBuilder
+    url: "https://jhelvy.github.io/xaringanBuilder/"
+output:
+  postcards::jolla
+---
+ 
+```{css echo=FALSE}
+body {
+  background-color: #212529;
+  color: var(--pink);
+}
+```
+
+```{js echo=FALSE}
+document.addEventListener('DOMContentLoaded', function() {
+  const logo = document.querySelector('.container .col-12 > img:first-child')
+  logo.classList.remove('rounded-circle')
+  logo.setAttribute(
+    'alt', 
+    'Xaringan Club hex logo: a pink and black logo featuring a stylized eye ' +
+    'and the words "Xaringan Club" emblazoned on a soap bar. Inspired by the ' + 
+    'Xaringan package hex and the Fight Club soap logo. Logo originally ' + 
+    'created by Tan Ho and is released under CC0.'
+  )
+  
+  document
+    .querySelectorAll('.col-8 > .list-inline > .list-inline-item > a > button')
+    .forEach(el => {
+      el.classList.remove('btn-outline-dark')
+      el.classList.add('btn-outline-warning')
+    })
+})
+```

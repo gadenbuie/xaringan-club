@@ -1,0 +1,29 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# xaringan-club
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+A small corner of the internet dedicated to our favorite presentation package.
+
+```{r links, echo=FALSE, results="asis"}
+links <- rmarkdown::yaml_front_matter("index.Rmd")$links
+links <- purrr::map_chr(links, glue::glue_data, "- [{label}]({url})")
+cat(paste(links, collapse = "\n"))
+```
+
+---
+
+Logo by [Tan Ho](https://github.com/dynastyprocess/graphics/tree/main/xaringanclub).
