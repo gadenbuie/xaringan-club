@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# xaringan-club
+# xaringan.club <a href="https://xaringan.club"><img src="https://xaringan.club/xaringanclub.png" align="right" height="144px" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -15,6 +15,7 @@ package.
 -   [xaringanthemer](https://pkg.garrickadenbuie.com/xaringanthemer)
 -   [xaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra)
 -   [xaringanBuilder](https://jhelvy.github.io/xaringanBuilder/)
+-   [xaringancolor](https://github.com/EmilHvitfeldt/xaringancolor#readme)
 
 ------------------------------------------------------------------------
 
