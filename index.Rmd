@@ -19,11 +19,19 @@ links:
 output:
   postcards::jolla
 ---
+
+::: {.lead .text-warning}
+The first rule of xaringan club is...<br/>we talk about xaringan.
+:::
  
 ```{css echo=FALSE}
 body {
   background-color: #212529;
   color: var(--pink);
+  background-image: url("constantin-popp-0xYjdK5kRxM-unsplash.jpg");
+  background-size: cover;
+  background-position: 20% center;
+  background-attachment: fixed;
 }
 .list-group-item-action.btn-outline-warning {
   background: unset;
